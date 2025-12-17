@@ -34,9 +34,38 @@
   --tinybox-dark: #212325;
   --header-dark: #1d2430;
 
-  --background-gradient-dark: radial-gradient(1000px circle at 20% 10%, rgba(99, 102, 241, 0.10) 0%, transparent 60%),
-    radial-gradient(900px circle at 80% 20%, rgba(168, 85, 247, 0.08) 0%, transparent 60%),
-    linear-gradient(to bottom, #020617 0%, rgba(15, 23, 42, 0.60) 50%, rgba(30, 27, 75, 0.15) 100%);
+  /* Galaxy / night-sky background (stronger nebulas + denser stars + faint milky-way band) */
+  --background-gradient-dark:
+    /* nebula glows */
+    radial-gradient(1300px circle at 18% 12%, rgba(99, 102, 241, 0.26) 0%, transparent 64%),
+    radial-gradient(1200px circle at 82% 18%, rgba(168, 85, 247, 0.22) 0%, transparent 64%),
+    radial-gradient(1000px circle at 55% 95%, rgba(56, 189, 248, 0.16) 0%, transparent 62%),
+    radial-gradient(900px circle at 35% 55%, rgba(236, 72, 153, 0.10) 0%, transparent 60%),
+    /* faint milky way diagonal haze */
+    linear-gradient(
+      135deg,
+      transparent 35%,
+      rgba(255, 255, 255, 0.045) 48%,
+      rgba(167, 139, 250, 0.04) 52%,
+      transparent 65%
+    ),
+    /* denser starfield */
+    radial-gradient(1px 1px at 6% 22%, rgba(255, 255, 255, 0.26) 50%, transparent 52%),
+    radial-gradient(1px 1px at 12% 18%, rgba(255, 255, 255, 0.35) 50%, transparent 52%),
+    radial-gradient(1px 1px at 18% 66%, rgba(255, 255, 255, 0.20) 50%, transparent 52%),
+    radial-gradient(1px 1px at 24% 36%, rgba(255, 255, 255, 0.18) 50%, transparent 52%),
+    radial-gradient(1px 1px at 28% 42%, rgba(255, 255, 255, 0.25) 50%, transparent 52%),
+    radial-gradient(1px 1px at 34% 12%, rgba(255, 255, 255, 0.22) 50%, transparent 52%),
+    radial-gradient(1px 1px at 46% 22%, rgba(255, 255, 255, 0.22) 50%, transparent 52%),
+    radial-gradient(1px 1px at 52% 48%, rgba(255, 255, 255, 0.16) 50%, transparent 52%),
+    radial-gradient(1px 1px at 62% 58%, rgba(255, 255, 255, 0.20) 50%, transparent 52%),
+    radial-gradient(1px 1px at 70% 18%, rgba(255, 255, 255, 0.18) 50%, transparent 52%),
+    radial-gradient(1px 1px at 74% 34%, rgba(255, 255, 255, 0.22) 50%, transparent 52%),
+    radial-gradient(1px 1px at 82% 64%, rgba(255, 255, 255, 0.16) 50%, transparent 52%),
+    radial-gradient(1px 1px at 88% 70%, rgba(255, 255, 255, 0.18) 50%, transparent 52%),
+    radial-gradient(1px 1px at 92% 28%, rgba(255, 255, 255, 0.20) 50%, transparent 52%),
+    /* deep sky base */
+    linear-gradient(to bottom, #020617 0%, #050b1d 45%, #070a1f 100%);
   --background: var(--background-dark);
   --foreground: var(--foreground-dark);
   --background-gradient: var(--background-gradient-dark);
